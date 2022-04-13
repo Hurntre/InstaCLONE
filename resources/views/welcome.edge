@@ -1,9 +1,9 @@
 @layout('layouts/app')
 
 @section('content')
-<div>
+<div class="mt-10 flex justify-center flex-wrap">
     @each(post in posts)
-    <div class="border-2 bg-white w-9/12 my-6">
+    <div class="border-2 bg-white  w-9/12 my-6">
         <div class="m-2 flex justify-between">
             <div class="flex">
                 <img src="{{post.user.avatar}}" alt="" class="h-10 w-8 rounded-full border">

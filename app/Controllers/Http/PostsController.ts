@@ -31,7 +31,7 @@ export default class PostsController {
     const post = new Post();
     post.image = `images/${imageName}`;
     post.caption = body.caption;
-    post.userId = auth.user.id;
+    post.userId = auth.user!.id;
 
     await post.save();
 
