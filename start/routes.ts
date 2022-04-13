@@ -22,6 +22,7 @@ Route.get('/posts/create', 'PostsController.create').middleware('auth')
 Route.post('/posts/create', 'PostsController.store').middleware('auth')
 
 Route.post('/follow/:userid', 'FollowsController.store').middleware('auth')
+Route.delete('/follow/:userid', 'FollowsController.destroy').middleware('auth')
 
 Route.get('/accounts/edit', 'ProfilesController.edit').middleware('auth')
 Route.post('/accounts/edit', 'ProfilesController.update').middleware('auth')

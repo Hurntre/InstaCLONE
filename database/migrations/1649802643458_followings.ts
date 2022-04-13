@@ -8,7 +8,7 @@ export default class Followings extends BaseSchema {
       table.increments('id')
       table.integer('user_id')
       table.integer('following_id')
-      table.timestamps(true)
+      table.timestamps()
     })
   }
 
